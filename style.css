@@ -122,3 +122,74 @@ li span {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Contact Form */
+.contact-form {
+    display: grid;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-form label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background: #fafafa;
+    color: var(--text);
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Validation Styles */
+.contact-form input.invalid,
+.contact-form textarea.invalid {
+    border-color: #ef4444;
+}
+
+.error-msg {
+    color: #ef4444;
+    font-size: 0.85rem;
+    min-height: 20px; /* Prevents layout shift when error appears */
+    margin-top: -2px;
+}
+
+.contact-form button {
+    padding: 12px 24px;
+    background: var(--text);
+    color: var(--bg);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    justify-self: start;
+    margin-top: 8px;
+}
+
+.contact-form button:hover {
+    background: var(--muted);
+}
