@@ -35,7 +35,6 @@ body {
     gap: 56px;
 }
 
-/* Header */
 .hero {
     padding-bottom: 32px;
     border-bottom: 1px solid var(--border);
@@ -53,7 +52,6 @@ h1 {
     color: var(--muted);
 }
 
-/* Sections */
 section {
     max-width: 760px;
 }
@@ -72,7 +70,6 @@ p {
     color: var(--text);
 }
 
-/* Projects */
 ul {
     list-style: none;
     display: grid;
@@ -89,7 +86,6 @@ li span {
     font-weight: 500;
 }
 
-/* Skills */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -104,7 +100,6 @@ li span {
     background: #fafafa;
 }
 
-/* Footer */
 .footer {
     margin-top: 32px;
     padding-top: 32px;
@@ -123,7 +118,6 @@ li span {
     text-decoration: underline;
 }
 
-/* Contact Form */
 .contact-form {
     display: grid;
     gap: 16px;
@@ -163,7 +157,6 @@ li span {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
-/* Validation Styles */
 .contact-form input.invalid,
 .contact-form textarea.invalid {
     border-color: #ef4444;
@@ -172,7 +165,7 @@ li span {
 .error-msg {
     color: #ef4444;
     font-size: 0.85rem;
-    min-height: 20px; /* Prevents layout shift when error appears */
+    min-height: 20px;
     margin-top: -2px;
 }
 
